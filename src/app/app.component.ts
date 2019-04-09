@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'components-life-cycle';
+  name = 'Nick';
+  count = 0;
+  number = 1;
+
+  changeInputValue(e) {
+    this.name = e.target.value;
+  }
 }
